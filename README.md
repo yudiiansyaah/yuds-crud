@@ -5,15 +5,13 @@ Repositori ini berisi aplikasi CRUD yang dibangun menggunakan Python dan MySQL. 
 ## Video Demo
 
 ### Proses Registrasi
-[![Proses Registrasi](https://img.youtube.com/vi/95UXgt0v7N0/0.jpg)](https://youtu.be/95UXgt0v7N0)
+[![Proses Registrasi](https://img.youtube.com/vi/95UXgt0v7N0/0.jpg)](https://youtu.be/95UXgt0v7N0?autoplay=1)
 
 ### Proses Input
-[![Proses Input](https://img.youtube.com/vi/KwSUCyjLhyM/0.jpg)](https://youtu.be/KwSUCyjLhyM)
+[![Proses Input](https://img.youtube.com/vi/KwSUCyjLhyM/0.jpg)](https://youtu.be/KwSUCyjLhyM?autoplay=1)
 
 ### Lupa Password
-[![Lupa Password](https://img.youtube.com/vi/Yuwj-L1PR-4/0.jpg)](https://youtu.be/Yuwj-L1PR-4)
-
-
+[![Lupa Password](https://img.youtube.com/vi/Yuwj-L1PR-4/0.jpg)](https://youtu.be/Yuwj-L1PR-4?autoplay=1)
 
 ## Pengaturan Basis Data
 
