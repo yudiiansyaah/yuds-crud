@@ -1,25 +1,25 @@
 # CRUD Python MySQL
 
-This repository contains a CRUD application built using Python and MySQL. Below is an overview of the project structure, setup instructions, and usage guidelines.
+Repositori ini berisi aplikasi CRUD yang dibangun menggunakan Python dan MySQL. Berikut adalah gambaran umum struktur proyek, petunjuk instalasi, dan panduan penggunaan.
 
-## Demo Videos
+## Video Demo
 
-Here are some demo videos showcasing the application:
+Berikut adalah beberapa video demo yang menunjukkan aplikasi ini:
 
-1. **Registration Process**: [regist.mp4](video/regist.mp4)
-2. **Input Process**: [proses-input.mp4](video/proses-input.mp4)
-3. **Forgot Password**: [Lupa-Password.mp4](video/Lupa-Password.mp4)
+1. **Proses Registrasi**: [regist.mp4](video/regist.mp4)
+2. **Proses Input**: [proses-input.mp4](video/proses-input.mp4)
+3. **Lupa Password**: [Lupa-Password.mp4](video/Lupa-Password.mp4)
 
-## Database Setup
+## Pengaturan Basis Data
 
-### Step 1: Create Database
+### Langkah 1: Buat Basis Data
 ```sql
 CREATE DATABASE CRUD;
 ```
 
-### Step 2: Create Tables
+### Langkah 2: Buat Tabel
 
-#### Table `karyawan`
+#### Tabel `karyawan`
 ```sql
 CREATE TABLE karyawan (
     NIP VARCHAR(20) PRIMARY KEY,
@@ -33,7 +33,7 @@ CREATE TABLE karyawan (
 );
 ```
 
-#### Table `users`
+#### Tabel `users`
 ```sql
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -43,97 +43,82 @@ CREATE TABLE users (
 );
 ```
 
-### Step 3: Insert Sample Data
+## Petunjuk Instalasi
 
-#### Insert into `karyawan`
-```sql
-INSERT INTO karyawan (NIP, Nama_Depan, Nama_Belakang, Tanggal_Lahir, Alamat_Tinggal, Nomor_Handphone, Jabatan, Divisi) VALUES
-('1234567890', 'John', 'Doe', '1985-06-15', '123 Elm Street', '081234567890', 'Manager', 'HR'),
-('9876543210', 'Jane', 'Smith', '1990-09-22', '456 Oak Avenue', '081298765432', 'Developer', 'IT');
-```
+### Instal Git
 
-#### Insert into `users`
-```sql
-INSERT INTO users (username, password, email) VALUES
-('admin', 'admin123', 'admin@example.com'),
-('user1', 'password123', 'user1@example.com');
-```
-
-## Installation Instructions
-
-### Install Git
-
-#### For Debian/Ubuntu:
+#### Untuk Debian/Ubuntu:
 ```bash
 sudo apt update
 sudo apt install git
 ```
 
-#### For Fedora:
+#### Untuk Fedora:
 ```bash
 sudo dnf install git
 ```
 
-#### For Arch Linux:
+#### Untuk Arch Linux:
 ```bash
 sudo pacman -S git
 ```
 
-#### For macOS:
+#### Untuk macOS:
 ```bash
 brew install git
 ```
 
-#### For Windows:
-Download Git from [git-scm.com](https://github.com/yudiiansyaah/yuds-crud.git) and follow the installation instructions.
+#### Untuk Windows:
+Unduh Git dari [git-scm.com](https://github.com/yudiiansyaah/yuds-crud.git) dan ikuti petunjuk instalasi.
 
-### Clone the Repository
+### Klon Repositori
 ```bash
 git clone https://github.com/yudiiansyaah/yuds-crud.git
 cd crud-python-mysql
 ```
 
-### Create a Virtual Environment
+### Buat Virtual Environment
 
-#### For Linux/macOS:
+#### Untuk Linux/macOS:
 ```bash
 python3 -m venv venv
 ```
 
-#### For Windows:
+#### Untuk Windows:
 ```bash
 python -m venv venv
 ```
 
-### Activate Virtual Environment
+### Aktifkan Virtual Environment
 
-#### For Linux/macOS:
+#### Untuk Linux/macOS:
 ```bash
 source venv/bin/activate
 ```
 
-#### For Windows:
+#### Untuk Windows:
 ```bash
 venv\Scripts\activate
 ```
 
-### Install Requirements
+### Instal Requirements
 ```bash
 pip install -r requirements.txt
 ```
 
-## Run the Application
+## Jalankan Aplikasi
 
-#### For Linux/macOS:
+#### Untuk Linux/macOS:
 ```bash
 streamlit run Home.py
 ```
 
-#### For Windows:
+#### Untuk Windows:
 ```bash
 streamlit run Home.py
 ```
-## Project Structure
+
+## Struktur Proyek
 
 ```
 CRUD Python MySQL/
@@ -151,7 +136,8 @@ CRUD Python MySQL/
     └── Lupa-Password.mp4
 ```
 
-## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+## Lisensi
+
+Proyek ini dilisensikan di bawah Lisensi MIT. Lihat file [LICENSE](LICENSE) untuk detailnya.
 
