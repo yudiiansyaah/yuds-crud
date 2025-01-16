@@ -6,9 +6,23 @@ Repositori ini berisi aplikasi CRUD yang dibangun menggunakan Python dan MySQL. 
 
 Berikut adalah beberapa video demo yang menunjukkan aplikasi ini:
 
-1. **Proses Registrasi**: [regist.mp4](Video/regist.mp4)
-2. **Proses Input**: [proses-input.mp4](Video/proses-input.mp4)
-3. **Lupa Password**: [Lupa-Password.mp4](Video/Lupa-Password.mp4)
+1. **Proses Registrasi**:
+<video width="600" controls>
+  <source src="Video/regist.mp4" type="video/mp4">
+  Browser Anda tidak mendukung elemen video.
+</video>
+
+2. **Proses Input**:
+<video width="600" controls>
+  <source src="Video/proses-input.mp4" type="video/mp4">
+  Browser Anda tidak mendukung elemen video.
+</video>
+
+3. **Lupa Password**:
+<video width="600" controls>
+  <source src="Video/Lupa-Password.mp4" type="video/mp4">
+  Browser Anda tidak mendukung elemen video.
+</video>
 
 ## Pengaturan Basis Data
 
