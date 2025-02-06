@@ -1,7 +1,6 @@
 from sqlalchemy import create_engine
 
 def create_connection():
-    """Membuat koneksi ke database MySQL menggunakan SQLAlchemy."""
     host = "localhost"
     user = "root"
     password = ""
