@@ -1,9 +1,8 @@
 import streamlit as st
 from sqlalchemy import text
 from datetime import datetime
-from sqlalchemy.exc import IntegrityError # Import IntegrityError
+from sqlalchemy.exc import IntegrityError 
 
-# Pengecekan status login
 if 'logged_in' not in st.session_state or not st.session_state.logged_in:
     st.warning("Anda harus login untuk mengakses halaman ini.")
     st.stop()  
@@ -14,7 +13,6 @@ else:
     st.title("Menu Create Data")
 
     def save_data(nip, nama_depan, nama_belakang, tanggal_lahir, alamat_tinggal, nomor_handphone, jabatan, divisi):
-        """Menyimpan data karyawan baru ke dalam database."""
         engine = create_connection()
         if engine:
             try:
