@@ -11,7 +11,6 @@ else:
     st.title("Menu Read Data")
 
     def load_data():
-        """Membaca data dari tabel karyawan dan mengembalikan DataFrame."""
         try:
             engine = create_connection()
             if engine:
@@ -30,7 +29,6 @@ else:
         st.table(data)
     elif data is not None:
         st.error("Tidak ada data untuk ditampilkan.")
-    # Tombol Logout
     if st.button("Logout"):
         st.session_state.logged_in = False
         st.session_state.current_page = "home"
