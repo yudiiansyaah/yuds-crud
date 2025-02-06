@@ -10,7 +10,6 @@ else:
     st.title("Menu Delete Data")
 
     def load_data():
-        """Membaca data dari tabel karyawan dan mengembalikan DataFrame."""
         try:
             engine = create_connection()
             if engine:
@@ -24,7 +23,6 @@ else:
             return None
 
     def delete_data(delete_nip):
-       """Menghapus data karyawan dari database berdasarkan NIP."""
        try:
           engine = create_connection()
           if engine:
