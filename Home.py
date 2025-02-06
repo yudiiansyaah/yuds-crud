@@ -8,7 +8,6 @@ st.set_page_config(
     layout="wide"
 )
 
-# Inisialisasi session state
 if 'login_message' not in st.session_state:
     st.session_state.login_message = None
 if 'register_message' not in st.session_state:
@@ -16,7 +15,7 @@ if 'register_message' not in st.session_state:
 if 'logged_in' not in st.session_state:
     st.session_state.logged_in = False
 if 'current_page' not in st.session_state:
-    st.session_state.current_page = "home"  # Halaman default adalah home
+    st.session_state.current_page = "home"  
 if 'forgot_message' not in st.session_state:
     st.session_state.forgot_message = None
 if 'logout_triggered' not in st.session_state:
@@ -93,7 +92,6 @@ if not st.session_state.logged_in:
     st.header("Selamat Datang di Aplikasi CRUD")
     st.write("Silakan login atau daftar untuk melanjutkan.")
     st.caption("Aplikasi ini dibuat oleh Yud'S")
-    # Form Login
     with st.expander("Masuk"):
         with st.form("login_form"):
             login_username_or_email = st.text_input("Username atau Email")
@@ -104,7 +102,7 @@ if not st.session_state.logged_in:
                 if login_user(login_username_or_email, login_password):
                     st.session_state.logged_in = True
                     st.session_state.login_message = "Login Berhasil!"
-                    st.session_state.current_page = "dashboard"  # Redirect ke dashboard setelah login
+                    st.session_state.current_page = "dashboard" 
                     st.rerun()
                 else:
                     st.session_state.login_message = "Login Gagal. Cek Username/Email dan Password."
@@ -116,7 +114,6 @@ if not st.session_state.logged_in:
                 st.error(st.session_state.login_message)
         st.session_state.login_message = None
 
-    # Form Register
     with st.expander("Daftar"):
         with st.form("register_form"):
             register_username = st.text_input("Username")
@@ -141,7 +138,6 @@ if not st.session_state.logged_in:
                 st.error(st.session_state.register_message)
         st.session_state.register_message = None
 
-    # Fitur Lupa Password
     with st.expander("Lupa Password"):
         with st.form("forgot_password_form"):
             forgot_username_or_email = st.text_input("Username atau Email")
