@@ -12,7 +12,6 @@ if 'logged_in' not in st.session_state or not st.session_state.logged_in:
     st.title("Menu Update Data")
 
     def load_data():
-        """Membaca data dari tabel karyawan dan mengembalikan DataFrame."""
         try:
             engine = create_connection()
             if engine:
@@ -26,7 +25,6 @@ if 'logged_in' not in st.session_state or not st.session_state.logged_in:
             return None
 
     def update_data(nip, nama_depan, nama_belakang, tanggal_lahir, alamat_tinggal, nomor_handphone, jabatan, divisi):
-        """Mengupdate data karyawan dalam database."""
         try:
             engine = create_connection()
             if engine:
